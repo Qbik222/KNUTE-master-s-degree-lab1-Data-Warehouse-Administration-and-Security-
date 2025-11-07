@@ -1,0 +1,47 @@
+[2025-11-07T10:15:07.176477] SUCCESS | register | subject=alice
+[2025-11-07T10:15:44.084867] SUCCESS | login | subject=alice
+[2025-11-07T10:18:34.591689] SUCCESS | create_object | subject=alice | object_id=190a1893-5c00-479d-95c6-c17c24fc8498, name=secret.txt, type=file
+[2025-11-07T10:27:37.089454] FAILED | access_denied | subject=alice | object_id=<file_id>, operation=write
+[2025-11-07T10:28:18.926443] FAILED | access_denied | subject=alice | object_id=<file_id>, operation=write
+[2025-11-07T10:29:13.293525] SUCCESS | write_file | subject=alice | object_id=190a1893-5c00-479d-95c6-c17c24fc8498
+[2025-11-07T10:29:34.463627] SUCCESS | read_file | subject=alice | object_id=190a1893-5c00-479d-95c6-c17c24fc8498
+[2025-11-07T10:30:40.666647] SUCCESS | logout | subject=alice
+[2025-11-07T10:30:52.673113] SUCCESS | register | subject=bob
+[2025-11-07T10:30:57.823132] SUCCESS | login | subject=bob
+[2025-11-07T10:31:06.475872] SUCCESS | logout | subject=bob
+[2025-11-07T10:31:16.282142] SUCCESS | login | subject=alice
+[2025-11-07T10:31:43.068757] SUCCESS | grant | subject=alice | source=190a1893-5c00-479d-95c6-c17c24fc8498, target=bob, rights=r
+[2025-11-07T10:31:53.213328] SUCCESS | logout | subject=alice
+[2025-11-07T10:31:58.935855] SUCCESS | login | subject=bob
+[2025-11-07T10:32:06.141951] SUCCESS | read_file | subject=bob | object_id=190a1893-5c00-479d-95c6-c17c24fc8498
+[2025-11-07T10:33:39.785317] SUCCESS | create_object | subject=bob | object_id=45f045ed-1410-4028-b208-b8389812b22e, name=file1.txt, type=file
+[2025-11-07T10:33:51.695664] SUCCESS | create_object | subject=bob | object_id=67bf773d-93d9-4935-a43a-a8e2e758a473, name=file2.txt, type=file
+[2025-11-07T10:36:26.939392] SUCCESS | create_object | subject=bob | object_id=36cb7bcb-d669-4569-a033-14d5e2f34bee, name=fileFrom.txt, type=file
+[2025-11-07T10:36:37.258872] SUCCESS | create_object | subject=bob | object_id=5b547416-7897-481e-820f-3d255aefb062, name=fileTo.txt, type=file
+[2025-11-07T10:37:17.920977] SUCCESS | grant | subject=bob | source=36cb7bcb-d669-4569-a033-14d5e2f34bee, target=5b547416-7897-481e-820f-3d255aefb062, rights=r
+[2025-11-07T10:38:13.249222] SUCCESS | take | subject=bob | source=5b547416-7897-481e-820f-3d255aefb062, target=36cb7bcb-d669-4569-a033-14d5e2f34bee, rights=r
+[2025-11-07T10:41:19.284282] SUCCESS | access_granted | subject=bob | object_id=5b547416-7897-481e-820f-3d255aefb062, right=r
+[2025-11-07T10:42:20.783944] SUCCESS | access_granted | subject=bob | object_id=5b547416-7897-481e-820f-3d255aefb062, right=w
+[2025-11-07T10:42:52.732857] SUCCESS | logout | subject=bob
+[2025-11-07T10:43:00.997289] SUCCESS | login | subject=alice
+[2025-11-07T10:43:08.452321] FAILED | access_denied | subject=alice | object_id=5b547416-7897-481e-820f-3d255aefb062, right=w
+[2025-11-07T10:46:42.851518] SUCCESS | login | subject=alice
+[2025-11-07T10:58:56.511470] SUCCESS | login | subject=alice
+[2025-11-07T11:01:26.276022] FAILED | access_denied | subject=alice | object_id=secret.txt, operation=write
+[2025-11-07T11:01:34.917660] SUCCESS | create_object | subject=alice | object_id=bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82, name=secret.txt, type=file
+[2025-11-07T11:01:40.948214] FAILED | access_denied | subject=alice | object_id=secret.txt, operation=write
+[2025-11-07T11:02:38.669308] SUCCESS | write_file | subject=alice | object_id=bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82
+[2025-11-07T11:02:49.683067] FAILED | access_denied | subject=alice | object_id=secret.txt, right=r
+[2025-11-07T11:03:00.898094] FAILED | access_denied | subject=alice | object_id=secret.txt, right=w
+[2025-11-07T11:03:08.000703] FAILED | access_denied | subject=alice | object_id=secret.txt, right=t
+[2025-11-07T11:07:24.198234] FAILED | access_denied | subject=alice | object_id=secret.txt, right=r
+[2025-11-07T11:07:24.200732] FAILED | access_denied | subject=alice | object_id=secret.txt, right=w
+[2025-11-07T11:07:24.202800] FAILED | access_denied | subject=alice | object_id=secret.txt, right=t
+[2025-11-07T11:08:54.526833] SUCCESS | access_granted | subject=alice | object_id=bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82, right=w
+[2025-11-07T11:09:01.073216] SUCCESS | access_granted | subject=alice | object_id=bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82, right=t
+[2025-11-07T11:09:02.791751] SUCCESS | access_granted | subject=alice | object_id=bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82, right=g
+[2025-11-07T11:10:51.780438] SUCCESS | access_granted | subject=alice | object_id=bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82, right=r
+[2025-11-07T11:11:22.436399] SUCCESS | logout | subject=alice
+[2025-11-07T11:11:27.916528] SUCCESS | register | subject=attacker
+[2025-11-07T11:11:36.128905] SUCCESS | login | subject=alice
+[2025-11-07T11:12:28.107906] SUCCESS | grant | subject=alice | source=bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82, target=attacker, rights=r,w

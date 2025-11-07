@@ -1,0 +1,432 @@
+{
+  "events": [
+    {
+      "timestamp": "2025-11-07T10:15:07.176477",
+      "type": "register",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:15:44.084867",
+      "type": "login",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:18:34.591689",
+      "type": "create_object",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "object_id": "190a1893-5c00-479d-95c6-c17c24fc8498",
+        "name": "secret.txt",
+        "type": "file"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:27:37.089454",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "<file_id>",
+        "operation": "write"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:28:18.926443",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "<file_id>",
+        "operation": "write"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:29:13.293525",
+      "type": "write_file",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "object_id": "190a1893-5c00-479d-95c6-c17c24fc8498"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:29:34.463627",
+      "type": "read_file",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "object_id": "190a1893-5c00-479d-95c6-c17c24fc8498"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:30:40.666647",
+      "type": "logout",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:30:52.673113",
+      "type": "register",
+      "subject": "bob",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:30:57.823132",
+      "type": "login",
+      "subject": "bob",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:31:06.475872",
+      "type": "logout",
+      "subject": "bob",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:31:16.282142",
+      "type": "login",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:31:43.068757",
+      "type": "grant",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "source": "190a1893-5c00-479d-95c6-c17c24fc8498",
+        "target": "bob",
+        "rights": "r"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:31:53.213328",
+      "type": "logout",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:31:58.935855",
+      "type": "login",
+      "subject": "bob",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:32:06.141951",
+      "type": "read_file",
+      "subject": "bob",
+      "success": true,
+      "details": {
+        "object_id": "190a1893-5c00-479d-95c6-c17c24fc8498"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:33:39.785317",
+      "type": "create_object",
+      "subject": "bob",
+      "success": true,
+      "details": {
+        "object_id": "45f045ed-1410-4028-b208-b8389812b22e",
+        "name": "file1.txt",
+        "type": "file"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:33:51.695664",
+      "type": "create_object",
+      "subject": "bob",
+      "success": true,
+      "details": {
+        "object_id": "67bf773d-93d9-4935-a43a-a8e2e758a473",
+        "name": "file2.txt",
+        "type": "file"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:36:26.939392",
+      "type": "create_object",
+      "subject": "bob",
+      "success": true,
+      "details": {
+        "object_id": "36cb7bcb-d669-4569-a033-14d5e2f34bee",
+        "name": "fileFrom.txt",
+        "type": "file"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:36:37.258872",
+      "type": "create_object",
+      "subject": "bob",
+      "success": true,
+      "details": {
+        "object_id": "5b547416-7897-481e-820f-3d255aefb062",
+        "name": "fileTo.txt",
+        "type": "file"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:37:17.920977",
+      "type": "grant",
+      "subject": "bob",
+      "success": true,
+      "details": {
+        "source": "36cb7bcb-d669-4569-a033-14d5e2f34bee",
+        "target": "5b547416-7897-481e-820f-3d255aefb062",
+        "rights": "r"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:38:13.249222",
+      "type": "take",
+      "subject": "bob",
+      "success": true,
+      "details": {
+        "source": "5b547416-7897-481e-820f-3d255aefb062",
+        "target": "36cb7bcb-d669-4569-a033-14d5e2f34bee",
+        "rights": "r"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:41:19.284282",
+      "type": "access_granted",
+      "subject": "bob",
+      "success": true,
+      "details": {
+        "object_id": "5b547416-7897-481e-820f-3d255aefb062",
+        "right": "r"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:42:20.783944",
+      "type": "access_granted",
+      "subject": "bob",
+      "success": true,
+      "details": {
+        "object_id": "5b547416-7897-481e-820f-3d255aefb062",
+        "right": "w"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:42:52.732857",
+      "type": "logout",
+      "subject": "bob",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:43:00.997289",
+      "type": "login",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:43:08.452321",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "5b547416-7897-481e-820f-3d255aefb062",
+        "right": "w"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T10:46:42.851518",
+      "type": "login",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T10:58:56.511470",
+      "type": "login",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T11:01:26.276022",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "secret.txt",
+        "operation": "write"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:01:34.917660",
+      "type": "create_object",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "object_id": "bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82",
+        "name": "secret.txt",
+        "type": "file"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:01:40.948214",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "secret.txt",
+        "operation": "write"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:02:38.669308",
+      "type": "write_file",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "object_id": "bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:02:49.683067",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "secret.txt",
+        "right": "r"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:03:00.898094",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "secret.txt",
+        "right": "w"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:03:08.000703",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "secret.txt",
+        "right": "t"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:07:24.198234",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "secret.txt",
+        "right": "r"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:07:24.200732",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "secret.txt",
+        "right": "w"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:07:24.202800",
+      "type": "access_denied",
+      "subject": "alice",
+      "success": false,
+      "details": {
+        "object_id": "secret.txt",
+        "right": "t"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:08:54.526833",
+      "type": "access_granted",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "object_id": "bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82",
+        "right": "w"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:09:01.073216",
+      "type": "access_granted",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "object_id": "bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82",
+        "right": "t"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:09:02.791751",
+      "type": "access_granted",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "object_id": "bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82",
+        "right": "g"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:10:51.780438",
+      "type": "access_granted",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "object_id": "bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82",
+        "right": "r"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T11:11:22.436399",
+      "type": "logout",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T11:11:27.916528",
+      "type": "register",
+      "subject": "attacker",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T11:11:36.128905",
+      "type": "login",
+      "subject": "alice",
+      "success": true,
+      "details": {}
+    },
+    {
+      "timestamp": "2025-11-07T11:12:28.107906",
+      "type": "grant",
+      "subject": "alice",
+      "success": true,
+      "details": {
+        "source": "bc75ef2f-6811-4c7d-ab6a-b67edfbe6f82",
+        "target": "attacker",
+        "rights": "r,w"
+      }
+    }
+  ]
+}

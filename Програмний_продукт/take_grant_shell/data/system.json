@@ -1,0 +1,19 @@
+{
+  "users": {
+    "alice": {
+      "password_hash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "is_admin": false,
+      "created_at": "0"
+    },
+    "bob": {
+      "password_hash": "1ba3d16e9881959f8c9a9762854f72c6e6321cdd44358a10a4e939033117eab9",
+      "is_admin": false,
+      "created_at": "1762503307.176333"
+    },
+    "attacker": {
+      "password_hash": "664ae701b786898eec1ffc483510497f88a76543b315e0c23c0b22aaed28726e",
+      "is_admin": false,
+      "created_at": "1762505916.4526927"
+    }
+  }
+}
