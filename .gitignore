@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Дані системи (опціонально - можна комітити для демонстрації)
+# data/system.json
+# data/audit.json
+# logs/audit.log
+
+# Временные файлы
+*.tmp
+*.log
+
